@@ -70,15 +70,15 @@ print( """
                 </form>
                 %s
             </body>
-            </html>""" % (result)) 						# here we insert the updated or value of result
+            </html>""" % (result)) 		# here we insert the updated or value of 'result'
 
 
 
-			### ### OTHER USEFUL HTML ### ###
-			# this will generate a date picker in our html form automatically
-			<input type='date' id='#' step='7' min='2015-02-01'>
-			<input type="number" id='#' min='#' max="#" step="1">
-			<input type="telephone" id="#" placeholer="081-1110111">
+	### ### OTHER USEFUL HTML ### ###
+	# this will generate a date picker in our html form automatically
+	<input type='date' id='#' step='7' min='2015-02-01'>
+	<input type="number" id='#' min='#' max="#" step="1">
+	<input type="telephone" id="#" placeholer="081-1110111">
 
 
 
