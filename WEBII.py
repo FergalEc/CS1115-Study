@@ -21,7 +21,7 @@ if len(form_data) != 0 :										# check if there is any form data, if there is
 	#do something
 	result = 'change'										# this is where we can make changes to the result of our web page
 	try :
-		first_name = escape(form_data.getfirst('name')).strip()					# we can grab any form data sent to us here
+		first_name = escape(form_data.getfirst('name', '')).strip()					# we can grab any form data sent to us here
 
 		# 	OPTION 1: 
 		# 	if you want to add something to the database
