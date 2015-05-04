@@ -29,7 +29,7 @@ if len(form_data) != 0 :										# check if there is any form data, if there is
 		connection = db.connect('localhost', 'userid', 'password', 'database_name')		# this is how we create a connection to the database
         	cursor = connection.cursor(db.cursors.DictCursor)					# we set up a cursor to interact with the databse
         	cursor.execute("""INSERT INTO people (name)						
-                          VALUES (%s, %s)""", (first_name))						# always use the comma to sanitize our code
+                          VALUES (%s)""", (first_name))						# always use the comma to sanitize our code
         	connection.commit()		#WARNING HERE#						# this is only needed if we are adding data to our database
 
         	# OPTION 2:
