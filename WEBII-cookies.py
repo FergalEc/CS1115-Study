@@ -20,7 +20,7 @@ if not http_cookie_header :                         # if there isn't proceed
   if len(form_data) != 0 :                          # check if we have been given form data
     # we have data, let's do something with it
     try :
-      band_vote = escape(form_data.getfirst('bands')).strip()     # store the band voted for as band_vote
+      band_vote = escape(form_data.getfirst('bands', '')).strip()     # store the band voted for as band_vote
       
       connection = db.connect('localhost', 'userid', 'password', 'database_name')     # connect to database
       cursor = connection.cursor(db.cursors.DictCursor)           # set up cursor
